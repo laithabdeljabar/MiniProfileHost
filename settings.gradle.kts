@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "MiniProfileHost"
 include(":app")
-include(":miniprofile")
+include(":miniprofile_host")

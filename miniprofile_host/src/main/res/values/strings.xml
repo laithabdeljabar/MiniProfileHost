@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mini_profile_title">Mini Profile</string>
+    <string name="mini_profile_initialized">MiniProfile Ready</string>
+    <string name="mini_profile_not_initialized">MiniProfile not initialized</string>
+    <string name="mini_profile_placeholder">—</string>
+    <string name="mini_profile_name">Name</string>
+    <string name="mini_profile_email">Email</string>
+    <string name="mini_profile_phone">Phone</string>
+    <string name="mini_profile_image">Avatar URL</string>
+    <string name="mini_profile_last_updated">Last updated</string>
+    <string name="mini_profile_refresh">Refresh</string>
+    <string name="mini_profile_clear">Clear stored profile</string>
+    <string name="mini_profile_close">Close</string>
+</resources>
+

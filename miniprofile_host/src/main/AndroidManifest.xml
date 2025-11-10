@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.miniprofile">
+    package="com.laithabdeljabar.miniprofilehost">
 
     <application>
         <activity
             android:name=".MiniProfileActivity"
-            android:exported="true"/>
+            android:exported="false"
+            android:theme="@style/Theme.Material3.DayNight"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
     </application>
 
 </manifest>
