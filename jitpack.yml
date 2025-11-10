@@ -1,0 +1,10 @@
+jdk:
+  - openjdk11
+
+before_install:
+  - ./gradlew clean
+  - ./gradlew build
+
+install:
+  - ./gradlew build
+
