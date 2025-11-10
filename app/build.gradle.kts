@@ -1,5 +1,6 @@
+// غيّر من application إلى library
 plugins {
-    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.library)  // تغيير هنا
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
 }
@@ -9,7 +10,8 @@ android {
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.miniprofilehost"
+        // إزالة applicationId لأن Libraries لا تحتاجها
+        // applicationId = "com.example.miniprofilehost"  // احذف هذا السطر
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -27,6 +29,13 @@ android {
             )
         }
     }
+
+    // إضافة buildFeatures إذا كنت تحتاج Views
+    buildFeatures {
+        compose = true
+        viewBinding = true  // اختياري إذا كنت تستخدم ViewBinding
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -34,13 +43,9 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
-    buildFeatures {
-        compose = true
-    }
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
